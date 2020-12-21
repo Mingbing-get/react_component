@@ -1,7 +1,7 @@
-<h3>react组件<h3/> <br/>
-一：总体介绍： <br/>
+<h3>react组件</h3> <br/>
+<h5>一：总体介绍：</h5>
     基于react的组件，使用了fount-awsome的字体图标 <br/>
-二：样式列表： <br/>
+<h5>二：样式列表： </h5>
 (1)、adverse 实现轮播图 <br/>
 (2)、agument 实现显示评论 <br/>
 (3)、backTop 实现返回顶部 <br/>
