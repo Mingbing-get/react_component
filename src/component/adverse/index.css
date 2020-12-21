@@ -1,0 +1,42 @@
+.adv-box {
+    display: flex;
+    background-color: #666;
+}
+
+.adv-box .adv-tiao-row {
+    margin: 1px;
+    margin-right: 0px;
+}
+
+.adv-box .adv-tiao-row:last-child {
+    margin-right: 1px;
+}
+
+.adv-box .adv-tiao-column {
+    margin: 1px;
+    margin-bottom: 0px;
+}
+
+.adv-box .adv-tiao-column:last-child {
+    margin-bottom: 1px;
+}
+
+@keyframes myscale-row {
+    0%{transform: scaleX(1);}
+    100%{transform: scaleX(0);}
+}
+
+@keyframes myscaleback-row {
+    0%{transform: scaleX(0);}
+    100%{transform: scaleX(1);}
+}
+
+@keyframes myscale-column {
+    0%{transform: scaleY(1);}
+    100%{transform: scaleY(0);}
+}
+
+@keyframes myscaleback-column {
+    0%{transform: scaleY(0);}
+    100%{transform: scaleY(1);}
+}

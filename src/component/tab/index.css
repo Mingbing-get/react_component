@@ -1,0 +1,53 @@
+.table-box {
+
+}
+
+.table-box ul {
+    list-style: none;
+}
+
+.table-box ul::after {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.table-box ul:first-child li {
+    float: left;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: rgba(200,200,200,0.2);
+
+    font-size: 20px;
+    color: rgba(0,0,0,0.85);
+}
+
+.table-box ul:first-child li:hover {
+    background-color: white;
+    color: #40a9ff;
+    border: 1px solid rgba(200,200,200,0.4);
+    border-bottom: none;
+}
+
+.table-box ul:first-child li.active {
+    background-color: white;
+    color: #40a9ff;
+    border: 1px solid rgba(200,200,200,0.4);
+    border-bottom: none;
+}
+
+/*内容区域*/
+.table-box ul:last-child {
+    margin: 0 5px;
+}
+
+.table-box ul:last-child li {
+    display: none;
+}
+
+.table-box ul:last-child li.show {
+    display: block;
+}

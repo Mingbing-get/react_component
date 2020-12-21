@@ -1,0 +1,66 @@
+.table-box {
+    padding: 0 5px;
+}
+
+.table-box .table-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.table-box .table-footer {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.table-box .table-main {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*加边框*/
+.table-box.border-row .table-title,
+.table-box.border-row .table-row,
+.table-box.border-col .table-row>div,
+.table-box.border-col .table-row>div:first-child {
+    border-left: 1px solid #bbb;
+}
+
+/*三线框*/
+.table-box.border-three .table-title,
+.table-box.border-three .table-footer,
+.table-box.border-three .table-row:last-child {
+    border-bottom: 1px solid #bbb;
+}
+
+/*给表格主题加边框*/
+.table-box.border-main .table-main {
+    border: 1px solid #bbb;
+}
+
+/*给整个表格加边框*/
+.table-box.border-box {
+    border: 1px solid #bbb;
+}
+
+/*给整个表格加边框同时加上三线*/
+.table-box.border-box.border-three .table-footer {
+    border-bottom: none;
+}
+
+/*第一列文字加粗*/
+.table-box.blod-first-col .table-row>div:first-child {
+    font-weight: bold;
+}
+/*第一行文字加粗*/
+.table-box.blod-first-row .table-row:first-child {
+    font-weight: bold;
+}
+
+/*鼠标经过时高亮*/
+.table-box.light-row .table-row:hover {
+    background-color: #eee;
+}

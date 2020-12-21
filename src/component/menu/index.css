@@ -1,0 +1,56 @@
+.menu-bar {
+    border-right: 1px solid rgba(0,0,0,0.2);
+    display: inline-block;
+    margin: 5px 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: all 0.4s ease;
+    z-index: 100;
+}
+
+.menu-bar ul {
+    list-style: none;
+}
+
+.menu-bar ul li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.menu-bar ul li:hover {
+    color: #40a9ff;
+}
+
+.menu-bar ul li.active {
+    color: #40a9ff;
+}
+
+/*扩展属性*/
+.menu-bar.decrition-row ul::after {
+    content: '.';
+    visibility: hidden;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.menu-bar.decrition-row>ul>li {
+    float: left;
+    margin: 0 10px;
+}
+
+.menu-bar.decrition-row {
+    border-right:none
+}
+
+.menu-bar.decrition-row>ul>.menu-item.down>.menu-item-content::after {
+    padding-left: 5px;
+    content: "\f107";
+}
+
+.menu-bar.decrition-row>ul>.menu-item.down>.menu-bar {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    margin: 0;
+}

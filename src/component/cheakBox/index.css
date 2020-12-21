@@ -1,0 +1,62 @@
+.cheakbox-box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 2px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.cheakbox-box:hover {
+    border-color: #40a9ff;
+}
+
+.cheakbox-box::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cheakbox-box.cheakAll {
+    background-color: #fff;
+    border-color: rgba(0,0,0,0.3);
+}
+
+.cheakbox-box.cheakAll::after {
+    display: inline-block;
+    width: 70%;
+    height: 70%;
+    background-color: #40a9ff;
+    border-radius: 2px;
+    content: '';
+}
+
+.cheakbox-box.cheaked {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.cheakbox-box.cheaked::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 10px;
+
+    content: '\f00c';
+    color: white;
+}
+
+.cheakbox-box.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.cheakbox-box.disabled:hover {
+    border-color: rgba(0,0,0,0.3);
+}

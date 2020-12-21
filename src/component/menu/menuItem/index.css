@@ -1,0 +1,73 @@
+.menu-item {
+    user-select: none;
+    position: relative;
+}
+
+.menu-item.down>.menu-item-content::after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "\f107";
+
+    padding-left: 30px;
+    margin-left: auto;
+}
+
+.menu-item.down.active>.menu-item-content::after {
+    content: "\f106";
+}
+
+.menu-item>.menu-item-content {
+    word-break: keep-all;
+    display: flex;
+}
+
+.menu-item>.menu-bar {
+    border-right: none;
+    color: initial;
+}
+
+.menu-item.down>.menu-bar {
+    display: none;
+}
+
+.menu-item.down.active>.menu-bar {
+    display: inline-block;
+}
+
+/*扩展样式*/
+.menu-item.position-right>.menu-bar {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding-left: 20px;
+}
+
+.menu-item.down.position-right>.menu-item-content::after {
+    content: "\f105";
+}
+
+.menu-item.position-left>.menu-bar {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    padding-right: 20px;
+}
+
+.menu-item.position-left>.menu-item-content {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.menu-item.down.position-left>.menu-item-content::after {
+    margin-left: 0;
+    padding-left: 0;
+    margin-right: auto;
+    padding-right: 30px;
+    content: "\f104";
+}
+

@@ -1,0 +1,20 @@
+.progress-box {
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.progress-box hr {
+    background-color: #40a9ff;
+    height: 3px;
+    margin-top: -1px;
+    border-radius: 1px;
+    border: none;
+    width: 0;
+
+    transition: all 0.1s linear;
+}

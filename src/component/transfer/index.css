@@ -1,0 +1,138 @@
+.transfer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.transfer-box .transfer-right,
+.transfer-box .transfer-left {
+    border: 1px solid rgba(0,0,0,0.3);
+    padding: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.transfer-box .transfer-right .transfer-title,
+.transfer-box .transfer-left .transfer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.transfer-box .transfer-right .transfer-title span,
+.transfer-box .transfer-left .transfer-title span {
+    margin: 0 3px;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-left,
+.transfer-box .transfer-left .transfer-title .transfer-title-left {
+    position: relative;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-show,
+.transfer-box .transfer-left .transfer-title .transfer-title-show {
+    position: absolute;
+    top: 18px;
+    left: 16px;
+    width: 85px;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+    padding: 5px 0;
+    text-align: center;
+
+    display: none;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-show span,
+.transfer-box .transfer-left .transfer-title .transfer-title-show span {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-show span:hover,
+.transfer-box .transfer-left .transfer-title .transfer-title-show span:hover {
+    background-color: #ddd;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-downspan,
+.transfer-box .transfer-left .transfer-title .transfer-title-downspan {
+    text-align: center;
+    width: 16px;
+    margin-left: 5px;
+}
+
+.transfer-box .transfer-right .transfer-title .transfer-title-downspan:hover>.transfer-title-show,
+.transfer-box .transfer-left .transfer-title .transfer-title-downspan:hover>.transfer-title-show {
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-box .transfer-right .transfer-content,
+.transfer-box .transfer-left .transfer-content {
+    overflow-y: auto;
+    position: relative;
+}
+
+.transfer-box .transfer-right .transfer-content .transfer-content-nodata,
+.transfer-box .transfer-left .transfer-content .transfer-content-nodata {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.transfer-box .transfer-right .transfer-content>.transfer-content-item,
+.transfer-box .transfer-left .transfer-content>.transfer-content-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 5px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.transfer-box .transfer-right .transfer-content>.transfer-content-item:hover,
+.transfer-box .transfer-left .transfer-content>.transfer-content-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.transfer-box .transfer-right .transfer-content>.transfer-content-item>span,
+.transfer-box .transfer-left .transfer-content>.transfer-content-item>span {
+    margin-left: 5px;
+}
+
+.transfer-box .transfer-center {
+    margin: 0 10px;
+}
+
+.transfer-box .transfer-center button {
+    width: 24px;
+    height: 24px;
+
+    background-color: #40a9ff;
+    border: 1px solid #40a9ff;
+    color: white;
+    outline: none;
+
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    border-radius: 3px;
+}
+
+.transfer-box .transfer-center button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+    border-color: rgba(0,0,0,0.3);
+    color: rgba(0,0,0,0.3);
+}

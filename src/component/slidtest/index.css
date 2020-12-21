@@ -1,0 +1,91 @@
+.slidtest-box {
+    width: 210px;
+}
+
+.slidtest-box .slidtest-img {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-position: center;
+    border-radius: 50%;
+
+    text-align: center;
+}
+
+.slidtest-box .slidtest-img::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.slidtest-box .slidtest-slide {
+    width: 200px;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #999;
+
+    margin: 0 auto;
+    position: relative;
+}
+
+.slidtest-box .slidtest-slide .slidtest-slide-left {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #40a9ff;
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+
+    background-color: #fff;
+}
+
+.slidtest-box .slidtest-slide .slidtest-slide-control {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    background-color: #40a9ff;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    cursor: move;
+}
+
+.slidtest-box .slidtest-slide .slidtest-slide-control::after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.slidtest-box .slidtest-slide .slidtest-slide-control.orgin::after {
+    content: "\f101";
+    color: white;
+}
+
+.slidtest-box .slidtest-img.cheak::after,
+.slidtest-box .slidtest-slide .slidtest-slide-control.cheak::after {
+    content: "\f00c";
+    color: green;
+}
+
+.slidtest-box .slidtest-img.error::after,
+.slidtest-box .slidtest-slide .slidtest-slide-control.error::after {
+    content: "\f00d";
+    color: #cc0000;
+}

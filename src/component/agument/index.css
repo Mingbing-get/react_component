@@ -1,0 +1,72 @@
+.agument-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
+
+.agument-box .agument-header {
+
+}
+
+.agument-box .agument-header h4 {
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.6);
+}
+
+.agument-box .agument-header textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2px 4px;
+}
+
+.agument-box .agument-header textarea:hover,
+.agument-box .agument-header textarea:focus {
+    outline: 1px solid #40a9ff;
+}
+
+.agument-box .agument-header div {
+    display: flex;
+}
+
+.agument-box .agument-header div button {
+    width: 60px;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #40a9ff;
+    color: rgba(0,0,0,0.6);
+    border-radius: 5px;
+    border: none;
+}
+
+.agument-box .agument-header div button:focus {
+    outline: none;
+}
+
+.agument-box .agument-content {
+    margin-top: 5px;
+}
+
+.agument-box .agument-content h4 {
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.6);
+    padding: 5px 0;
+}
+
+.agument-box .agument-content>div {
+    border-top: 1px solid rgba(200,200,200,0.6);
+}
+
+.agument-box .agument-footer {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.agument-box .agument-footer button {
+    width: 100px;
+    padding: 5px 0;
+    background-color: #40a9ff;
+    border: none;
+    border-radius: 5px;
+}

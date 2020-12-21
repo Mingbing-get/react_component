@@ -1,0 +1,67 @@
+.cardItem {
+    padding: 10px;
+    background-color: rgba(200,200,200,0.2);
+    width: 200px;
+    margin: 5px;
+    float: left;
+    transition: all 0.3s ease;
+}
+
+.cardItem:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+    transform: translate(-5px, -5px);
+}
+
+.cardItem img {
+    width: 100%;
+}
+
+.cardItem .cardTitle {
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+}
+
+.cardItem .cardTitle h4 {
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardItem .cardTitle p {
+    font-size: 10px;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cardItem .cardPrice {
+    margin-top: 10px;
+}
+
+.cardItem .cardPrice::after {
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.cardItem .cardPrice p:first-child {
+    color: rgba(255,0,0,0.85);
+    float: left;
+}
+
+.cardItem .cardPrice p:first-child span {
+    color: rgba(0,0,0,0.7);
+    font-size: 12px;
+    text-decoration: line-through;
+    text-line-through-color: rgba(0,0,0,0.7);
+    margin-left: 5px;
+}
+
+.cardItem .cardPrice p:last-child {
+    float: right;
+    font-size: 14px;
+}

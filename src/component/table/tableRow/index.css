@@ -1,0 +1,8 @@
+.table-row {
+    display: table-row;
+}
+.table-row>div {
+    display: table-cell;
+    text-align: center;
+    padding: 4px 0;
+}

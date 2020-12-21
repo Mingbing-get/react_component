@@ -1,0 +1,9 @@
+.cs {
+    background-color: #666;
+    line-height: 200px;
+    width: 300px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}

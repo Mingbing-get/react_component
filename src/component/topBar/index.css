@@ -1,0 +1,29 @@
+.topBar {
+  padding: 5px 10px;
+  position: relative;
+  margin: 5px 0;
+}
+
+.topBar_left {
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  color: rgba(0,0,0,0.4);
+  background-color: inherit;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.topBar_center {
+  padding-left: 16px;
+  text-align: center;
+}
+.topBar_right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}

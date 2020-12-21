@@ -1,0 +1,27 @@
+.pagination-box {
+
+}
+
+.pagination-box button {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.4);
+    outline: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination-box button.active {
+    color: #40a9ff;
+    border-color: #40a9ff;
+}
+
+.pagination-box .pagination-more {
+    border: none;
+}
+
+.pagination-box .pagination-disable {
+    color: rgba(0,0,0,0.2);
+    border-color: rgba(0,0,0,0.2);
+    cursor: not-allowed;
+}

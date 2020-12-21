@@ -1,0 +1,78 @@
+.pull-refresh-box {
+    position: relative;
+    
+    height: 150px;
+    overflow-y: auto;
+}
+.pull-refresh-box .pull-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+
+    z-index: -100;
+    background-color: #fff;
+    
+    padding: 20px 0;
+}
+
+.pull-refresh-box .pull-top::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "\f175";
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.pull-refresh-box .pull-top.springback::before {
+    content: "\f175";
+    font-size: 30px;
+    transition: all 0.2s linear;
+    transform: rotateZ(180deg);
+}
+
+.pull-refresh-box .pull-top.refresh::before {
+    content: "\f021";
+    font-size: 16px;
+    animation: rotateAll 1s infinite linear;
+}
+
+@keyframes rotateAll {
+    0%{transform: rotateZ(0)}
+    100%{transform: rotateZ(360deg)}
+}
+
+.pull-refresh-box .pull-content {
+    box-shadow: 0 -5px 5px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+.pull-refresh-box .pull-content>.pull-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    height: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.pull-refresh-box .pull-content>.pull-more.loading::before {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    margin-right: 10px;
+    content: "\f021";
+    animation: rotateAll 1s infinite linear;
+}

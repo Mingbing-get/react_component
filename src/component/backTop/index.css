@@ -1,0 +1,30 @@
+.backtop-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #40a9ff;
+
+    text-align: center;
+
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    z-index: 30000;
+
+    display: none;
+}
+
+.backtop-box span:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: "\f062";
+
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
